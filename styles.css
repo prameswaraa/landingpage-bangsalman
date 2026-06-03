@@ -696,3 +696,12 @@ h1 span { color: var(--brand-primary); }
   object-position: center;
   background: #06111d;
 }
+
+/* Exact supplied Baskoro experience card */
+.facilitator-image img[src$="baskoro-experience-card.jpg"],
+.photo-grid img[src$="baskoro-experience-card.jpg"] {
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  background: #f7f3ec;
+}
