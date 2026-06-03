@@ -1,0 +1,3 @@
+/* Exact mirror mode
+   index.html loads the original event.biznis.id WordPress CSS/assets via absolute URLs.
+   Add overrides here only if you intentionally want to diverge from the reference. */

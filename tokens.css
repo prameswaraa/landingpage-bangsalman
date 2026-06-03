@@ -1,0 +1,21 @@
+/* Design Tokens — event.biznis.id / Biznis.ID reference */
+:root {
+  --brand-primary: #ff6310;
+  --brand-secondary: #fd7c47;
+  --brand-dark: #111518;
+  --brand-muted: #687279;
+  --brand-light: #F4F5F6;
+  --brand-white: #ffffff;
+  --brand-blue: #004077;
+
+  --color-text: var(--brand-dark);
+  --color-text-muted: var(--brand-muted);
+  --color-background: var(--brand-white);
+  --color-surface: var(--brand-light);
+  --color-accent: var(--brand-primary);
+
+  --font-sans: Inter, Arial, Helvetica, sans-serif;
+  --radius-button: 999px;
+  --radius-card: 16px;
+  --shadow-soft: 0 10px 30px rgba(17, 21, 24, .10);
+}
