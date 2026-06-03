@@ -1,32 +1,32 @@
-/* Design Tokens — Biznis.ID / Value Creation */
+/* Design Tokens — Value Creation Advance dark-tech direction */
 :root {
   /* Brand */
-  --brand-primary: #ff6310;
-  --brand-primary-hover: #e8560c;
-  --brand-secondary: #fd7c47;
-  --brand-dark: #111518;
-  --brand-muted: #687279;
-  --brand-light: #f4f5f6;
+  --brand-primary: #40d9f1;
+  --brand-primary-hover: #65e7ff;
+  --brand-secondary: #2d5c88;
+  --brand-dark: #020812;
+  --brand-muted: #9ab8c8;
+  --brand-light: #e9f7ff;
   --brand-white: #ffffff;
-  --brand-blue: #004077;
-  --brand-gold: #f6b23f;
+  --brand-blue: #0b5f8c;
+  --brand-gold: #d8a35c;
 
   /* Colors */
-  --color-text: var(--brand-dark);
-  --color-text-muted: var(--brand-muted);
-  --color-text-inverse: #ffffff;
-  --color-background: #fff8f1;
-  --color-bg-soft: #fff1e5;
-  --color-surface: #ffffff;
-  --color-surface-warm: #fff6ed;
-  --color-border: rgba(17, 21, 24, .10);
-  --color-border-strong: rgba(255, 99, 16, .28);
+  --color-text: #f4fbff;
+  --color-text-muted: #a9c2d1;
+  --color-text-inverse: #06111d;
+  --color-background: #020812;
+  --color-bg-soft: rgba(64, 217, 241, .10);
+  --color-surface: rgba(8, 22, 35, .82);
+  --color-surface-warm: rgba(9, 29, 45, .86);
+  --color-border: rgba(142, 218, 255, .18);
+  --color-border-strong: rgba(64, 217, 241, .36);
 
   /* Gradients */
-  --gradient-hero: radial-gradient(circle at 82% 10%, rgba(255, 99, 16, .20), transparent 26rem), linear-gradient(180deg, #fff8f1 0%, #ffffff 74%);
-  --gradient-brand: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
-  --gradient-dark: linear-gradient(135deg, #111518 0%, #26313b 100%);
-  --gradient-soft: linear-gradient(135deg, #fff7ef 0%, #ffe7d6 100%);
+  --gradient-hero: radial-gradient(circle at 22% 24%, rgba(64, 217, 241, .24), transparent 28rem), radial-gradient(circle at 86% 18%, rgba(45, 92, 136, .50), transparent 32rem), linear-gradient(180deg, #020812 0%, #071727 58%, #020812 100%);
+  --gradient-brand: linear-gradient(135deg, #40d9f1, #2d8ec2);
+  --gradient-dark: linear-gradient(135deg, rgba(1, 8, 17, .96) 0%, rgba(8, 37, 58, .94) 100%);
+  --gradient-soft: linear-gradient(135deg, rgba(10, 48, 75, .76) 0%, rgba(8, 20, 34, .92) 100%);
 
   /* Typography */
   --font-sans: "Open Sans", Arial, Helvetica, sans-serif;
@@ -37,14 +37,14 @@
   --font-size-lg: 18px;
   --font-size-xl: 22px;
   --font-size-2xl: clamp(30px, 4vw, 48px);
-  --font-size-hero: clamp(38px, 5.7vw, 68px);
+  --font-size-hero: clamp(42px, 6vw, 76px);
   --line-height-tight: .98;
   --line-height-heading: 1.06;
   --line-height-body: 1.72;
   --letter-tight-sm: -.02em;
-  --letter-tight-md: -.045em;
-  --letter-tight-lg: -.045em;
-  --letter-wide: .10em;
+  --letter-tight-md: -.035em;
+  --letter-tight-lg: -.025em;
+  --letter-wide: .12em;
   --font-regular: 400;
   --font-medium: 500;
   --font-semibold: 600;
@@ -53,37 +53,15 @@
   --font-black: 900;
 
   /* Spacing */
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 10px;
-  --space-4: 12px;
-  --space-5: 14px;
-  --space-6: 16px;
-  --space-7: 18px;
-  --space-8: 20px;
-  --space-10: 24px;
-  --space-12: 28px;
-  --space-14: 34px;
-  --space-16: 40px;
-  --space-20: 48px;
-  --space-24: 56px;
-  --space-28: 64px;
-  --space-32: 76px;
-  --space-36: 96px;
+  --space-1: 4px; --space-2: 8px; --space-3: 10px; --space-4: 12px; --space-5: 14px; --space-6: 16px; --space-7: 18px; --space-8: 20px; --space-10: 24px; --space-12: 28px; --space-14: 34px; --space-16: 40px; --space-20: 48px; --space-24: 56px; --space-28: 64px; --space-32: 76px; --space-36: 96px;
 
   /* Radius */
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 18px;
-  --radius-xl: 24px;
-  --radius-2xl: 32px;
-  --radius-button: 999px;
-  --radius-card: 16px;
+  --radius-sm: 8px; --radius-md: 14px; --radius-lg: 18px; --radius-xl: 24px; --radius-2xl: 32px; --radius-button: 999px; --radius-card: 16px;
 
   /* Shadows */
-  --shadow-soft: 0 10px 30px rgba(17, 21, 24, .10);
-  --shadow-card: 0 24px 70px rgba(17, 21, 24, .12);
-  --shadow-button: 0 16px 34px rgba(255, 99, 16, .30);
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, .24);
+  --shadow-card: 0 28px 80px rgba(0, 0, 0, .42);
+  --shadow-button: 0 16px 38px rgba(64, 217, 241, .24);
 
   /* Layout */
   --container-max: 1120px;

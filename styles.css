@@ -588,3 +588,103 @@ body { font-size: 16px; }
   h2 { font-size: clamp(28px, 8vw, 36px); }
   .lead, .copy-block p, .registration-copy p { font-size: 16px; }
 }
+
+/* Temporary dark-tech visual direction from Value Creation poster */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(64,217,241,.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(64,217,241,.045) 1px, transparent 1px),
+    radial-gradient(circle at 18% 36%, rgba(64,217,241,.12), transparent 28rem);
+  background-size: 54px 54px, 54px 54px, auto;
+  mask-image: linear-gradient(to bottom, black, transparent 86%);
+  z-index: -1;
+}
+.site-header {
+  background: rgba(2, 8, 18, .78);
+  border-bottom: 1px solid var(--color-border);
+}
+.brand, .nav-links a { color: var(--color-text); }
+.brand img { filter: brightness(0) invert(1); }
+.nav-links a:hover { color: var(--brand-primary); }
+.btn { color: #06111d; text-transform: uppercase; letter-spacing: .04em; }
+.btn-outline { color: var(--brand-primary); background: rgba(64,217,241,.08); }
+.hero { min-height: calc(100vh - 88px); }
+h1 { text-transform: uppercase; color: #fff; text-shadow: 0 0 28px rgba(64,217,241,.18); }
+h1 span { color: var(--brand-primary); }
+.hero-subtitle {
+  margin: -8px 0 var(--space-8);
+  color: rgba(255,255,255,.84);
+  font-size: clamp(22px, 3vw, 34px);
+  line-height: 1.2;
+  letter-spacing: .02em;
+}
+.program-mark {
+  width: max-content;
+  margin-bottom: var(--space-6);
+  color: var(--brand-primary);
+  font-family: var(--font-heading);
+  line-height: .88;
+  text-transform: lowercase;
+}
+.program-mark span,
+.program-mark strong { display: block; font-size: clamp(34px, 4vw, 52px); letter-spacing: -.04em; }
+.program-mark em { display: block; margin-top: 4px; color: #fff; font-size: 18px; font-style: normal; text-align: right; }
+.hero-stats div,
+.problem-grid article,
+.copy-block,
+.feature-grid article,
+.registration-form,
+.accordion-list details {
+  background: rgba(5, 20, 34, .78);
+  border-color: var(--color-border);
+  backdrop-filter: blur(14px);
+}
+.hero-stats strong, h2, h3, .registration-form label span { color: #fff; }
+.poster-panel {
+  padding: 0;
+  background: rgba(2, 8, 18, .55);
+  border-color: rgba(64,217,241,.32);
+}
+.poster-panel img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-card);
+}
+.problem-strip { border: 1px solid var(--color-border-strong); }
+.problem-grid span,
+.feature-grid span { background: rgba(64,217,241,.14); color: var(--brand-primary); border: 1px solid var(--color-border-strong); }
+.role-list,
+.registration-shell,
+.audience-card { background: var(--gradient-soft); border-color: var(--color-border-strong); }
+.company-pills span,
+.checklist li,
+.form-cta-box,
+.registration-form input,
+.registration-form select {
+  background: rgba(255,255,255,.06);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+.registration-form input::placeholder { color: rgba(244,251,255,.48); }
+.registration-form select option { color: #111518; }
+.price, .speaker-nickname { color: var(--brand-gold) !important; }
+.event-detail {
+  margin: 0 0 var(--space-8);
+  color: rgba(255,255,255,.82);
+  font-weight: var(--font-bold);
+  line-height: 1.6;
+}
+.photo-grid img, .facilitator-image { border: 1px solid var(--color-border-strong); }
+.cta-section { background: linear-gradient(135deg, #0b5f8c, #40d9f1); }
+.footer { border-top-color: var(--color-border); }
+.footer img { filter: brightness(0) invert(1); }
+@media (max-width: 600px) {
+  .hero { min-height: auto; }
+  .program-mark span, .program-mark strong { font-size: 34px; }
+  .hero-subtitle { font-size: 20px; }
+}
