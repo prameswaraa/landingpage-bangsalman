@@ -29,20 +29,21 @@
   --gradient-soft: linear-gradient(135deg, #fff7ef 0%, #ffe7d6 100%);
 
   /* Typography */
-  --font-sans: Inter, Arial, Helvetica, sans-serif;
+  --font-sans: "Open Sans", Arial, Helvetica, sans-serif;
+  --font-heading: Outfit, "Open Sans", Arial, Helvetica, sans-serif;
   --font-size-xs: 12px;
   --font-size-sm: 14px;
   --font-size-md: 16px;
   --font-size-lg: 18px;
   --font-size-xl: 22px;
   --font-size-2xl: clamp(30px, 4vw, 48px);
-  --font-size-hero: clamp(40px, 6vw, 72px);
+  --font-size-hero: clamp(38px, 5.7vw, 68px);
   --line-height-tight: .98;
   --line-height-heading: 1.06;
   --line-height-body: 1.72;
   --letter-tight-sm: -.02em;
   --letter-tight-md: -.045em;
-  --letter-tight-lg: -.065em;
+  --letter-tight-lg: -.045em;
   --letter-wide: .10em;
   --font-regular: 400;
   --font-medium: 500;
