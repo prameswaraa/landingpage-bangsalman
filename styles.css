@@ -722,3 +722,33 @@ h1 span { color: var(--brand-primary); }
 @media (max-width: 600px) {
   .program-logo { width: 150px; }
 }
+
+/* Video testimonials from Google Drive */
+.video-testimonials { padding-top: var(--space-24); }
+.video-grid {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: var(--space-7);
+  align-items: stretch;
+}
+.video-card {
+  overflow: hidden;
+  border-radius: var(--radius-2xl);
+  background: rgba(5, 20, 34, .78);
+  border: 1px solid var(--color-border-strong);
+  box-shadow: var(--shadow-card);
+}
+.video-card iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border: 0;
+  background: #020812;
+}
+.video-card div { padding: var(--space-8); }
+.video-card h3 { color: #fff; margin-bottom: var(--space-3); }
+.video-card p { color: var(--color-text-muted); line-height: var(--line-height-body); margin: 0; }
+.featured-video iframe { aspect-ratio: 16 / 9; }
+@media (max-width: 920px) {
+  .video-grid { grid-template-columns: 1fr; }
+}
