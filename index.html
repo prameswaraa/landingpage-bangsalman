@@ -33,6 +33,7 @@
       <a href="#silabus">Silabus</a>
       <a href="#fasilitator">Fasilitator</a>
       <a href="#investasi">Investasi</a>
+      <a href="#registrasi">Formulir</a>
       <a href="#faq">FAQ</a>
     </nav>
     <a class="btn btn-small js-cta" href="https://wa.me/6281188027633?text=Saya%20ingin%20daftar%20Value%20Creation%20Workshop" data-cta="header_whatsapp">Daftar via WhatsApp</a>
@@ -178,6 +179,113 @@
       </div>
     </section>
 
+    <section class="section registration-section section-track" id="registrasi" data-section="registration_form">
+      <div class="registration-shell">
+        <div class="registration-copy">
+          <p class="eyebrow">Formulir Registrasi</p>
+          <h2>Daftarkan diri Anda untuk Value Creation Workshop.</h2>
+          <p>Isi data berikut supaya tim penerima tamu bisa menghubungi Anda untuk konfirmasi pendaftaran, invoice corporate, dan detail teknis acara.</p>
+          <div class="form-cta-box">
+            <strong>Mau dibantu manual?</strong>
+            <span>Klik CTA WhatsApp di bawah formulir untuk ngobrol langsung dengan CS.</span>
+          </div>
+        </div>
+
+        <form class="registration-form" id="registrationForm">
+          <fieldset>
+            <legend>Data Pribadi</legend>
+            <label>
+              <span>Nama Lengkap</span>
+              <input type="text" name="name" placeholder="Nama lengkap Anda" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="Alamat email Anda" required />
+            </label>
+            <label>
+              <span>No. WhatsApp</span>
+              <input type="tel" name="phone" placeholder="Nomor WhatsApp Anda" required />
+            </label>
+            <div class="form-row">
+              <label>
+                <span>Kota/Kabupaten</span>
+                <input type="text" name="city" placeholder="Kota" required />
+              </label>
+              <label>
+                <span>Provinsi</span>
+                <input type="text" name="province" placeholder="Provinsi" required />
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Data Bisnis</legend>
+            <label>
+              <span>Nama/Merek Bisnis</span>
+              <input type="text" name="business" placeholder="Nama atau merek bisnis Anda" required />
+            </label>
+            <div class="form-row">
+              <label>
+                <span>Jenis Badan Usaha</span>
+                <select name="entity" required>
+                  <option value="">Pilih jenis badan usaha</option>
+                  <option>PT</option>
+                  <option>Yayasan</option>
+                  <option>Koperasi</option>
+                  <option>CV</option>
+                  <option>Perorangan</option>
+                </select>
+              </label>
+              <label>
+                <span>Posisi Anda</span>
+                <select name="position" required>
+                  <option value="">Pilih posisi</option>
+                  <option>Pemilik Bisnis</option>
+                  <option>Komisaris</option>
+                  <option>Direksi</option>
+                  <option>Manajer</option>
+                  <option>Staf</option>
+                </select>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                <span>Jumlah Karyawan</span>
+                <select name="employees" required>
+                  <option value="">Pilih jumlah karyawan</option>
+                  <option>Kurang dari 10 orang</option>
+                  <option>Antara 10 s/d 25 orang</option>
+                  <option>Lebih dari 25 orang</option>
+                </select>
+              </label>
+              <label>
+                <span>Skala Bisnis</span>
+                <select name="scale" required>
+                  <option value="">Pilih skala omzet tahunan</option>
+                  <option>Ultra Mikro (kurang dari Rp 300 juta)</option>
+                  <option>Mikro (Rp 300 juta s/d Rp 2 miliar)</option>
+                  <option>Kecil (Rp 2 miliar s/d Rp 15 miliar)</option>
+                  <option>Menengah (Rp 15 miliar s/d Rp 50 miliar)</option>
+                  <option>Besar (lebih dari Rp 50 miliar)</option>
+                </select>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Mendaftar Workshop</legend>
+            <label class="radio-card">
+              <input type="radio" name="workshop" value="Value Creation Workshop" checked />
+              <span>Value Creation: Winning Business In Digital Era</span>
+            </label>
+          </fieldset>
+
+          <button class="btn form-submit js-cta" type="submit" data-cta="registration_form_submit">DAFTARKAN SAYA</button>
+          <a class="btn btn-outline form-whatsapp js-cta" href="https://wa.me/6281188027633?text=Saya%20ingin%20daftar%20Value%20Creation%20Workshop" data-cta="form_whatsapp">Daftar via WhatsApp</a>
+        </form>
+      </div>
+    </section>
+
     <section class="section faq-section section-track" id="faq" data-section="faq">
       <div class="section-head centered">
         <p class="eyebrow">FAQ</p>
@@ -215,6 +323,29 @@
   </footer>
 
   <script>
+    const registrationForm = document.getElementById('registrationForm');
+    if (registrationForm) {
+      registrationForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const data = new FormData(registrationForm);
+        const message = [
+          'Saya ingin daftar Value Creation Workshop',
+          `Nama: ${data.get('name') || ''}`,
+          `Email: ${data.get('email') || ''}`,
+          `No WA: ${data.get('phone') || ''}`,
+          `Domisili: ${data.get('city') || ''}, ${data.get('province') || ''}`,
+          `Bisnis: ${data.get('business') || ''}`,
+          `Badan Usaha: ${data.get('entity') || ''}`,
+          `Posisi: ${data.get('position') || ''}`,
+          `Karyawan: ${data.get('employees') || ''}`,
+          `Skala: ${data.get('scale') || ''}`
+        ].join('\n');
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'form_submission_success', form_name: 'value_creation_registration' });
+        window.location.href = `https://wa.me/6281188027633?text=${encodeURIComponent(message)}`;
+      });
+    }
+
     document.querySelectorAll('.js-cta').forEach((el) => {
       el.addEventListener('click', () => {
         window.dataLayer = window.dataLayer || [];

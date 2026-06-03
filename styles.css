@@ -312,3 +312,99 @@ h3 { margin-bottom: var(--space-4); font-size: var(--font-size-xl); letter-spaci
   .audience-card, .cta-section { padding: var(--space-10); }
   .footer { flex-direction: column; align-items: flex-start; }
 }
+
+.registration-section { padding-top: 0; }
+.registration-shell {
+  display: grid;
+  grid-template-columns: .82fr 1.18fr;
+  gap: var(--space-24);
+  align-items: start;
+  padding: var(--space-16);
+  border-radius: var(--radius-2xl);
+  background: var(--gradient-soft);
+  border: 1px solid var(--color-border-strong);
+  box-shadow: var(--shadow-card);
+}
+.registration-copy { position: sticky; top: 104px; }
+.registration-copy p { color: var(--color-text-muted); font-size: var(--font-size-lg); line-height: var(--line-height-body); }
+.form-cta-box {
+  margin-top: var(--space-8);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  background: #fff;
+  border: 1px solid var(--color-border);
+}
+.form-cta-box strong, .form-cta-box span { display: block; }
+.form-cta-box strong { color: var(--brand-primary); margin-bottom: var(--space-2); }
+.form-cta-box span { color: var(--color-text-muted); line-height: 1.55; }
+.registration-form {
+  display: grid;
+  gap: var(--space-7);
+  padding: var(--space-10);
+  border-radius: var(--radius-xl);
+  background: #fff;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+}
+.registration-form fieldset {
+  display: grid;
+  gap: var(--space-5);
+  margin: 0;
+  padding: 0 0 var(--space-7);
+  border: 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.registration-form fieldset:last-of-type { border-bottom: 0; padding-bottom: 0; }
+.registration-form legend {
+  margin-bottom: var(--space-5);
+  color: var(--brand-primary);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-black);
+  letter-spacing: var(--letter-tight-sm);
+}
+.registration-form label { display: grid; gap: var(--space-2); }
+.registration-form label span {
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-extrabold);
+}
+.registration-form input,
+.registration-form select {
+  width: 100%;
+  min-height: 50px;
+  padding: 0 var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: #fff;
+  color: var(--color-text);
+  font: inherit;
+  outline: none;
+}
+.registration-form input:focus,
+.registration-form select:focus {
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 4px rgba(255, 99, 16, .12);
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); }
+.radio-card {
+  display: flex !important;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: var(--space-4) !important;
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border-strong);
+}
+.radio-card input { width: 18px; min-height: 18px; accent-color: var(--brand-primary); }
+.form-submit { width: 100%; border: 0; cursor: pointer; font-size: var(--font-size-md); }
+.form-whatsapp { width: 100%; }
+
+@media (max-width: 920px) {
+  .registration-shell { grid-template-columns: 1fr; }
+  .registration-copy { position: static; }
+}
+@media (max-width: 600px) {
+  .registration-shell, .registration-form { padding: var(--space-7); }
+  .form-row { grid-template-columns: 1fr; }
+}
