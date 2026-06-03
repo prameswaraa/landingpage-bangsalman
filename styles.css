@@ -688,3 +688,11 @@ h1 span { color: var(--brand-primary); }
   .program-mark span, .program-mark strong { font-size: 34px; }
   .hero-subtitle { font-size: 20px; }
 }
+
+/* Use the supplied facilitator profile slide without aggressive cropping */
+.facilitator-image img[src$="baskoro-profile-slide.jpg"] {
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  background: #06111d;
+}
