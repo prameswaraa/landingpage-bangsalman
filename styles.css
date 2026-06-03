@@ -705,3 +705,20 @@ h1 span { color: var(--brand-primary); }
   object-position: center;
   background: #f7f3ec;
 }
+
+/* Replace text mark with supplied Value Creation Advance logo */
+.program-logo {
+  width: clamp(150px, 18vw, 230px);
+  margin-bottom: var(--space-6);
+  padding: 0;
+}
+.program-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 0 18px rgba(64, 217, 241, .22));
+}
+@media (max-width: 600px) {
+  .program-logo { width: 150px; }
+}
