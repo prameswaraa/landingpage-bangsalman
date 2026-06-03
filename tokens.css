@@ -1,21 +1,95 @@
-/* Design Tokens — event.biznis.id / Biznis.ID reference */
+/* Design Tokens — Biznis.ID / Value Creation */
 :root {
+  /* Brand */
   --brand-primary: #ff6310;
+  --brand-primary-hover: #e8560c;
   --brand-secondary: #fd7c47;
   --brand-dark: #111518;
   --brand-muted: #687279;
-  --brand-light: #F4F5F6;
+  --brand-light: #f4f5f6;
   --brand-white: #ffffff;
   --brand-blue: #004077;
+  --brand-gold: #f6b23f;
 
+  /* Colors */
   --color-text: var(--brand-dark);
   --color-text-muted: var(--brand-muted);
-  --color-background: var(--brand-white);
-  --color-surface: var(--brand-light);
-  --color-accent: var(--brand-primary);
+  --color-text-inverse: #ffffff;
+  --color-background: #fff8f1;
+  --color-bg-soft: #fff1e5;
+  --color-surface: #ffffff;
+  --color-surface-warm: #fff6ed;
+  --color-border: rgba(17, 21, 24, .10);
+  --color-border-strong: rgba(255, 99, 16, .28);
 
+  /* Gradients */
+  --gradient-hero: radial-gradient(circle at 82% 10%, rgba(255, 99, 16, .20), transparent 26rem), linear-gradient(180deg, #fff8f1 0%, #ffffff 74%);
+  --gradient-brand: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
+  --gradient-dark: linear-gradient(135deg, #111518 0%, #26313b 100%);
+  --gradient-soft: linear-gradient(135deg, #fff7ef 0%, #ffe7d6 100%);
+
+  /* Typography */
   --font-sans: Inter, Arial, Helvetica, sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 22px;
+  --font-size-2xl: clamp(30px, 4vw, 48px);
+  --font-size-hero: clamp(40px, 6vw, 72px);
+  --line-height-tight: .98;
+  --line-height-heading: 1.06;
+  --line-height-body: 1.72;
+  --letter-tight-sm: -.02em;
+  --letter-tight-md: -.045em;
+  --letter-tight-lg: -.065em;
+  --letter-wide: .10em;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 10px;
+  --space-4: 12px;
+  --space-5: 14px;
+  --space-6: 16px;
+  --space-7: 18px;
+  --space-8: 20px;
+  --space-10: 24px;
+  --space-12: 28px;
+  --space-14: 34px;
+  --space-16: 40px;
+  --space-20: 48px;
+  --space-24: 56px;
+  --space-28: 64px;
+  --space-32: 76px;
+  --space-36: 96px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
   --radius-button: 999px;
   --radius-card: 16px;
+
+  /* Shadows */
   --shadow-soft: 0 10px 30px rgba(17, 21, 24, .10);
+  --shadow-card: 0 24px 70px rgba(17, 21, 24, .12);
+  --shadow-button: 0 16px 34px rgba(255, 99, 16, .30);
+
+  /* Layout */
+  --container-max: 1120px;
+  --container-padding: 40px;
+  --container-padding-mobile: 28px;
+
+  /* Motion */
+  --duration-fast: .2s;
+  --ease-standard: ease;
 }
