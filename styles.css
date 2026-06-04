@@ -105,6 +105,8 @@ h3 { margin-bottom: var(--space-4); font-size: var(--font-size-xl); letter-spaci
 }
 .hero-stats strong { display: block; font-size: 24px; letter-spacing: var(--letter-tight-md); }
 .hero-stats span { color: var(--color-text-muted); font-weight: var(--font-semibold); font-size: var(--font-size-sm); }
+.hero-stats div:nth-child(2) strong,
+.hero-stats div:nth-child(3) strong { font-size: clamp(20px, 2vw, 24px); }
 
 .hero-panel {
   position: relative;
@@ -554,6 +556,33 @@ h1 span { color: var(--brand-primary); }
   color: #fff;
   font-size: 13px;
   font-weight: var(--font-black);
+}
+.bonus-card {
+  grid-column: 1 / -1;
+  margin-top: var(--space-6);
+  padding: var(--space-8);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, rgba(64,217,241,.16), rgba(255,255,255,.07));
+  border: 1px solid var(--color-border-strong);
+  color: #fff;
+  box-shadow: 0 16px 34px rgba(64,217,241,.08);
+}
+.bonus-card span {
+  display: block;
+  margin-bottom: var(--space-2);
+  color: var(--brand-primary);
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-black);
+  letter-spacing: var(--letter-wide);
+  text-transform: uppercase;
+}
+.bonus-card strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 1.18;
+  letter-spacing: var(--letter-tight-md);
 }
 .faq-section { padding-top: var(--space-24); }
 .faq-list { max-width: 860px; margin-inline: auto; }
