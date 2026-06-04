@@ -105,8 +105,11 @@ h3 { margin-bottom: var(--space-4); font-size: var(--font-size-xl); letter-spaci
 }
 .hero-stats strong { display: block; font-size: 24px; letter-spacing: var(--letter-tight-md); }
 .hero-stats span { color: var(--color-text-muted); font-weight: var(--font-semibold); font-size: var(--font-size-sm); }
-.hero-stats div:nth-child(2) strong,
-.hero-stats div:nth-child(3) strong { font-size: clamp(20px, 2vw, 24px); }
+.hero-stats div:nth-child(2) strong { font-size: clamp(20px, 2vw, 24px); }
+.hero-stats div:nth-child(3) strong {
+  font-size: clamp(17px, 1.7vw, 22px);
+  white-space: nowrap;
+}
 
 .hero-panel {
   position: relative;
