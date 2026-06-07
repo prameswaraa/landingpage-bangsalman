@@ -299,55 +299,23 @@
           <fieldset>
             <legend>Data Bisnis</legend>
             <label>
-              <span>Nama/Merek Bisnis</span>
-              <input type="text" name="business" placeholder="Nama atau merek bisnis Anda" required />
+              <span>Nama Bisnis</span>
+              <input type="text" name="business" placeholder="Nama bisnis Anda" required />
             </label>
-            <div class="form-row">
-              <label>
-                <span>Jenis Badan Usaha</span>
-                <select name="entity" required>
-                  <option value="">Pilih jenis badan usaha</option>
-                  <option>PT</option>
-                  <option>Yayasan</option>
-                  <option>Koperasi</option>
-                  <option>CV</option>
-                  <option>Perorangan</option>
-                </select>
-              </label>
-              <label>
-                <span>Posisi Anda</span>
-                <select name="position" required>
-                  <option value="">Pilih posisi</option>
-                  <option>Pemilik Bisnis</option>
-                  <option>Komisaris</option>
-                  <option>Direksi</option>
-                  <option>Manajer</option>
-                  <option>Staf</option>
-                </select>
-              </label>
-            </div>
-            <div class="form-row">
-              <label>
-                <span>Jumlah Karyawan</span>
-                <select name="employees" required>
-                  <option value="">Pilih jumlah karyawan</option>
-                  <option>Kurang dari 10 orang</option>
-                  <option>Antara 10 s/d 25 orang</option>
-                  <option>Lebih dari 25 orang</option>
-                </select>
-              </label>
-              <label>
-                <span>Skala Bisnis</span>
-                <select name="scale" required>
-                  <option value="">Pilih skala omzet tahunan</option>
-                  <option>Ultra Mikro (kurang dari Rp 300 juta)</option>
-                  <option>Mikro (Rp 300 juta s/d Rp 2 miliar)</option>
-                  <option>Kecil (Rp 2 miliar s/d Rp 15 miliar)</option>
-                  <option>Menengah (Rp 15 miliar s/d Rp 50 miliar)</option>
-                  <option>Besar (lebih dari Rp 50 miliar)</option>
-                </select>
-              </label>
-            </div>
+            <label>
+              <span>Category Bisnis</span>
+              <input type="text" name="business_category" placeholder="Contoh: FnB, Healthcare, Education" required />
+            </label>
+            <label>
+              <span>Omzet</span>
+              <select name="revenue" required>
+                <option value="">Pilih omzet tahunan</option>
+                <option>&lt; 2 miliar per tahun (Mikro)</option>
+                <option>2 - 15 miliar per tahun (Kecil)</option>
+                <option>15 - 50 miliar per tahun (Menengah)</option>
+                <option>&gt; 50 miliar per tahun (Besar)</option>
+              </select>
+            </label>
           </fieldset>
 
           <fieldset>
@@ -417,11 +385,9 @@
           `Email: ${data.get('email') || ''}`,
           `No WA: ${data.get('phone') || ''}`,
           `Domisili: ${data.get('city') || ''}, ${data.get('province') || ''}`,
-          `Bisnis: ${data.get('business') || ''}`,
-          `Badan Usaha: ${data.get('entity') || ''}`,
-          `Posisi: ${data.get('position') || ''}`,
-          `Karyawan: ${data.get('employees') || ''}`,
-          `Skala: ${data.get('scale') || ''}`
+          `Nama Bisnis: ${data.get('business') || ''}`,
+          `Category Bisnis: ${data.get('business_category') || ''}`,
+          `Omzet: ${data.get('revenue') || ''}`
         ].join('\n');
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({ event: 'form_submission_success', form_name: 'value_creation_registration' });
