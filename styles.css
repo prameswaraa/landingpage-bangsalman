@@ -830,3 +830,38 @@ h1 span { color: var(--brand-primary); }
   }
   .wa-label { font-size: 13px; }
 }
+
+/* Guest speaker: Roy Simangunsong */
+.guest-speaker-section {
+  align-items: center;
+}
+.guest-speaker-section .copy-block {
+  position: relative;
+  overflow: hidden;
+}
+.guest-speaker-section .copy-block::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  bottom: -90px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(64,217,241,.20), transparent 68%);
+  pointer-events: none;
+}
+.speaker-title {
+  margin: calc(-1 * var(--space-3)) 0 var(--space-6);
+  color: var(--brand-gold) !important;
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 2.2vw, 28px);
+  font-weight: var(--font-black);
+  letter-spacing: var(--letter-tight-sm);
+}
+.guest-speaker-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  background: #051423;
+}
