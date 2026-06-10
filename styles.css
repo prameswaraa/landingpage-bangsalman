@@ -287,6 +287,13 @@ h3 { margin-bottom: var(--space-4); font-size: var(--font-size-xl); letter-spaci
   box-shadow: var(--shadow-card);
 }
 .cta-section .eyebrow { color: rgba(255,255,255,.78); }
+.cta-logo {
+  width: clamp(180px, 24vw, 300px);
+  height: auto;
+  margin-bottom: var(--space-6);
+  object-fit: contain;
+  filter: drop-shadow(0 0 18px rgba(255, 255, 255, .16));
+}
 .cta-section h2 { max-width: 640px; }
 .cta-section p { max-width: 700px; margin-bottom: 0; color: rgba(255,255,255,.82); }
 .footer {
